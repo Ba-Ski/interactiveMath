@@ -4,4 +4,5 @@
  * and open the template in the editor.
  */
 
-Commiting is ok
+var Commiting = function (y0) {
+}
