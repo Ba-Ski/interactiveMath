@@ -8,7 +8,7 @@ var PolarCoords = function ()
     this.y0 = this.canvas.width / 2;
     this.axisLength = this.canvas.width / 2;
     this.arrowImg = new Image();
-    this.arrowImg.src = "http://localhost:8080/math/arrow.png";
+    this.arrowImg.src = "resources/arrow.png";
     this.raf = 0;
     this.point = new PolarPoint(this.x0, this.y0, this.canvas, this.step);
 
@@ -145,7 +145,7 @@ PolarCoords.prototype.animateEvente = function (obj)
         var gifka;
         if ((gifka = document.getElementById('gifka'))!=undefined)
         {
-            gifka.src = "gifka/gifka.gif";
+            gifka.src = "resources/gifka/gifka.gif";
         }
         else {
             gifka = document.createElement("img");
@@ -156,20 +156,20 @@ PolarCoords.prototype.animateEvente = function (obj)
             gifka.style.height = '350px';
             gifka.style.width = '350px';
             gifka.style.visibility = 'visible';
-            var parentDiv = polar.canvas.parentNode;
+            var parentDiv = obj.canvas.parentNode;
             parentDiv.insertBefore(gifka, parentDiv.firstChild);
             gifka.addEventListener('click', function (e)
             {
                 var parentDiv = gifka.parentNode;
                 parentDiv.removeChild(gifka);
 
-                var rect = polar.canvas.getBoundingClientRect();
+                var rect = obj.canvas.getBoundingClientRect();
 
-                polar.point.x = e.clientX - rect.left;
-                polar.point.y = e.clientY - rect.top;
+                obj.point.x = e.clientX - rect.left;
+                obj.point.y = e.clientY - rect.top;
 
-                polar.axis();
-                polar.point.draw();
+                obj.axis();
+                obj.point.draw();
             });
             //polar.animObjs.nIntervId = window.setInterval(polar.anim, 100);
         }
