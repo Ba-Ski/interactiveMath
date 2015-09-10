@@ -145,14 +145,14 @@ PolarCoords.prototype.animateEvente = function (obj)
         var gifka;
         if ((gifka = document.getElementById('gifka'))!=undefined)
         {
-            gifka.src = "resources/gifka/gifka.gif";
+            gifka.src = "resources/gifka.gif";
         }
         else {
             gifka = document.createElement("img");
             gifka.className = "animation";
             gifka.id = "gifka";
             gifka.alt = "simple gif";
-            gifka.src = "gifka/gifka.gif";
+            gifka.src = "resources/gifka.gif";
             gifka.style.height = '350px';
             gifka.style.width = '350px';
             gifka.style.visibility = 'visible';
