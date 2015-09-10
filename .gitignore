@@ -1,7 +1,0 @@
-/src/conf/MANIFEST.MF
-/src/java/
-build/**
-build.xml
-dist/**
-nbproject/**
-src/**
