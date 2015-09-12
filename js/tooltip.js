@@ -1,4 +1,3 @@
-
 var tooltip = {
     tooltipDiv: undefined,
     offsetFromCursorY: 2,

@@ -15,7 +15,7 @@ PolarPoint.prototype.drawArc = function (length, angle) {
 
     var newAngle = angle > 0 ? angle - 0.4 : angle + 0.4;
 
-    arrow(this.ctx, length * 0.3 * this.step * Math.cos(newAngle),
+    tools.arrow(this.ctx, length * 0.3 * this.step * Math.cos(newAngle),
             length * this.step * 0.3 * Math.sin(newAngle),
             length * this.step * 0.3 * Math.cos(angle),
             length * this.step * 0.3 * Math.sin(angle),
