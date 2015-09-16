@@ -3,7 +3,6 @@ var PolarPoint = function (x0, y0, canvas, step) {
 };
     
 PolarPoint.prototype = Object.create(Point.prototype);
-
 PolarPoint.prototype.constructor = PolarPoint;
 
 PolarPoint.prototype.drawArc = function (length, angle) {

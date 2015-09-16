@@ -1,3 +1,4 @@
+
 function PolarCoords()
 {
     this.play = document.getElementById('play');
