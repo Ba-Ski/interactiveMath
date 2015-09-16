@@ -261,6 +261,14 @@ var mLabel = new PointText({
         justification: 'center'
 });
 
+var oLabel = new PointText({
+        point: startPoint + [-10,15],
+        content: 'O',
+        fillColor: 'black',
+        fontWeight: 'italic',
+        justification: 'center'
+});
+
 vector.length -= 5;
 drawPolarAxis();
 drawAngle(startPoint, vector, true, 'φ = ');
