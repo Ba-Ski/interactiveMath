@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Test</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            TeX: { equationNumbers: { autoNumber: "all" } }
+            });
+        </script>
+        <script type="text/javascript"
+                src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+    </head>
+    <body>     
+
+        <!--            <div id="mainPart">-->
+        <div id="content">
+            <h2 id="header">Векторная алгебра</h2>
+            <h3 class="header">
+                § 4. Определитель и его свойства
+            </h3>
+            <p style="margin-bottom: 5px">
+                В этом параграфе мы сформулируем правило, по которому каждой квадратной числовой матрице
+                порядка \(n\) ставится в соотвествие некоторое число ( фактически, мы
+                зададим числовцю функцию на множестве квадратных матриц порядка \(n\)).
+                Это позволяет характеризовать матрицу с набором \(n \cdot n\) элементов
+                по значению только одного числа, а также упрощает решение многих задач
+                динейной алгебры  и аналитической геометрии.
+            </p>
+            <p class="withIndent">
+                Для этого нам понадобится ряд дополнительных понятий, определение которых мы
+                дадим ниже.
+            </p>
+            <blockquote>
+                <u>Определение</u>: <u>перестановка \(n\) чисел</u> \(1,2...,n\)
+                (или \(n\) любых различных между собой символов \(a_1,a_2,..,a_n\))
+                называется любоерасположение этих чисел( или символов) в определенном
+                порядке.
+            </blockquote>
+            <p>
+                Так как данные \(n\) символов можно занумеровать числами \(1,2..,n\),
+                то изучение перестановок любых \(n\) символов сводится к изучению 
+                перестановок чисел \(1,2..,n\).
+            </p>
+            <p>
+                Число всех перестановок из \(n\) чисел равно \(n!\)
+                $$ n! = \displaystyle \prod_{k=1}^{n} k = 1\cdot2\cdot3 ...\cdot n$$
+            </p>
+            <p>
+                При этом \(0! = 1\). В общем случае перестановку записывают так: 
+            </p>
+            <p>
+                $$ \alpha = (\alpha_1,\alpha_2..,\alpha_n) $$
+            </p>
+            <blockquote>
+                <u>Определение</u>: <u>транспозицией перестановки</u> называют
+                такое ее расположение, при котором в ней меняются местами какие-либо
+                два элемента, другие остаются на своих местах.
+            </blockquote>
+            <p class="remark">
+            <u>Пример:</u> Выписать все перестановки чисел 1,2,3
+        </p>
+        <p style="margin-bottom: 5px">
+            <b>Решение:</b> все перестановки чисел 1,2,3:</p>
+        <p style="text-align: center">\(123, 132, 213, 231, 312, 321\) – их \(6 = 3! = 2\cdot3\)
+        </p>
+        <p>
+            Очевидно, что переход от одной перестановки к другой осуществляется
+            с помощью транспозиции. 
+        </p>
+        <p class="withIndent">
+            Далее введем еще несколько понятий.
+        </p>
+        <blockquote>
+            <u>Определение</u>: два числа \(\alpha_i\) и \(\alpha_j\) образуют
+            в перестановке \(\alpha = (\alpha_1,\alpha_2,..,\alpha_n)\) 
+            <u>инверсию</u>, если большее число стоит впереди (левее) меншьего
+            (т.е., если \(i&lt j\) и при этом \(\alpha_i&gt\alpha_j\))
+        </blockquote>
+        <p class="remark">
+        <u>Пример:</u> рассмотреть перестановку 528371964 и посчитать в ней количество 
+        инверсий. 
+    </p>
+    <p>
+        <b>Решение</b>: возьмем число 
+    </p>
+
+</div>
+</body> 
+</html>
