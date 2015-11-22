@@ -1,0 +1,80 @@
+
+.path{
+    /*stroke: red;*/
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke-width:15;
+    
+}
+
+.firstDrow{
+    animation-delay: 0s, 2s;
+    animation-timing-function: linear;    
+    animation-iteration-count: 1,1;
+    animation-duration: 2s, 0.5s;
+    animation-name: dash, dashDisap;
+}
+.secondDrow{    
+    animation-delay: 2s, 4s;
+    animation-timing-function: linear;    
+    animation-iteration-count: 1,1;
+    animation-duration: 2s, 0.5s;
+    animation-name: dash, dashDisap;
+}
+
+@keyframes dash {
+    0% {
+		stroke-dashoffset: 1000;
+	}
+	100% {
+		stroke-dashoffset: 0;
+		
+	}
+}
+
+@keyframes dashDisap{
+    from {
+        opacity:1;
+    }
+
+    to {
+        opacity:0;
+    }
+   
+}.numContainer{
+    position: absolute;
+    font-size: 2em;
+    bottom: 100px;
+    left: 40%;
+    right: 0;
+    margin: 0 auto;
+    font: 20px "Comic Sans MS", cursive, sans-serif;
+    vertical-align: middle;
+}
+.firstAppear{
+    animation-delay: 0s;
+    animation-duration: 0.1s;
+    animation-name: apperance;
+    animation-fill-mode: forwards; 
+}
+.middleAppear{
+    animation-delay: 1.8s;
+    animation-duration: 0.1s;
+    animation-name: apperance;
+    animation-fill-mode: forwards; 
+}
+.secondAppear{
+    animation-delay: 2s;
+    animation-duration: 0.1s;
+    animation-name: apperance;
+    animation-fill-mode: forwards;
+}
+@keyframes apperance{
+    from {
+        opacity:0;
+    }
+
+    to {
+        opacity:1;
+    }
+}
