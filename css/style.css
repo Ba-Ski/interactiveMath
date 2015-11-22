@@ -24,7 +24,21 @@ body{
     margin:0.83em 0px;
     margin-left: 10px;
 }
+.theoryWO{
+     padding: 6px 40px 6px 40px;
+    padding-left: 15px;
+    margin:0.83em 0px;
+    margin-left: 10px;
+}
 
+.underItal{
+    text-decoration: underline;
+    font-style: italic;
+}
+.theoryName{
+    text-decoration: underline;
+    font-weight: bold;
+}
 .code-result__iframe{
     margin-bottom: 40px;
 }
@@ -63,6 +77,162 @@ body{
 .withIndent{
     text-indent: 50px;
     margin: 0;
+}
+.svgContainer{
+    position: relative;
+    text-align: center;
+}
+.svgContainer svg{
+    margin: 0px auto;
+}
+.btn{
+  position: absolute;
+  top: 22px; left: 35px;
+  width: 40px; height: 30px;
+  background-color: #2e3e4f;
+  border-radius: 15px;
+  box-shadow: 0px 3px 0px rgba(0,0,0,.4);
+  transition: margin-top .2s; 
+}
+
+.btn::after{
+    position: relative;
+    top: 0px;
+    content: 'play';
+    color: white;
+    vertical-align: middle;
+}
+
+.btn:hover {
+  cursor:pointer;
+  margin-top:2px;
+  box-shadow: 0px 1px 0px rgba(0,0,0,.4);
+}
+
+.startAnim5{
+    stroke: blue;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+    animation-name: dash;
+    animation-fill-mode: forwards; 
+}
+.startAnim2{    
+    animation-delay: 1.5s, 3s;
+    animation-timing-function: linear;    
+    animation-iteration-count: 1,1;
+    animation-duration: 1.5s, 0.5s;
+    animation-name: dash, dashend;
+}
+.startAnim3{
+    animation-delay: 3s, 4.5s;
+    animation-timing-function: linear;    
+    animation-iteration-count: 1,1;
+    animation-duration: 1.5s, 0.5s;
+    animation-name: dash, dashend;
+}
+.startAnim1{
+    animation-delay: 4.5s, 6s;
+    animation-timing-function: linear;    
+    animation-iteration-count: 1,1;
+    animation-duration: 1.5s, 0.5s;
+    animation-name: dash, dashend;
+}
+.startAnim4{
+    animation-delay: 6s, 7.5s;
+    animation-timing-function: linear;    
+    animation-iteration-count: 1,1;
+    animation-duration: 1.5s, 0.5s;
+    animation-name: dash, dashend;
+}
+.startAnim5_{
+    animation-delay: 7.5s, 9s;
+    animation-timing-function: linear;    
+    animation-iteration-count: 1,1;
+    animation-duration: 1.5s, 0.5s;
+    animation-name: dash, dashend;
+}
+.startAnim6_{
+    animation-delay: 9s, 10.5s;
+    animation-timing-function: linear;    
+    animation-iteration-count: 1,1;
+    animation-duration: 1.5s, 0.5s;
+    animation-name: dash, dashend;
+}
+.path{
+    /*stroke: red;*/
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke-width:15;
+    
+}
+@keyframes dash {
+    0% {
+		stroke-dashoffset: 1000;
+	}
+	100% {
+		stroke-dashoffset: 0;
+		
+	}
+}
+
+@keyframes dashend{
+    from {
+        opacity:1;
+    }
+
+    to {
+        opacity:0;
+    }
+    
+}
+.numberChange{
+    animation-delay: 2s;
+    animation-name: apperance;
+    animation-fill-mode: forwards; 
+    
+    margin-left: -37px;
+    transition-delay: 2s;
+    transition-timing-function: steps(3, end);
+    transition-duration: 4.5s;
+    transition-property: margin-left; 
+}
+#fiveMore{
+    opacity: 0;
+}
+.apperStart{
+    animation-delay: .4s;
+    animation-duration: 0.1s;
+    animation-name: apperance;
+    animation-fill-mode: forwards; 
+}
+@keyframes apperance{
+    from {
+        opacity:0;
+    }
+
+    to {
+        opacity:1;
+    }
+}
+.numContainer{
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font: 20px "Comic Sans MS", cursive, sans-serif;
+    vertical-align: middle;
+}
+#digits{
+  width: .55em;
+  position: relative;
+  top: 5px;
+  overflow: hidden;
+}
+#stripe{
+    opacity: 0;
 }
 /*.container{
     height: 100%;
