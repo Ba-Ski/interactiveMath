@@ -8,7 +8,7 @@ $(function(){
 	  	document.getElementById("paths22").classList.remove("firstDrow");
 
 	  	$("#11_22").removeClass("firstAppear");
-		$("#dot").removeClass("middleAppear");
+		$("#minus").removeClass("middleAppear");
 		$("#21_12").removeClass("secondAppear");
 		
 		setTimeout(function() {
@@ -18,7 +18,7 @@ $(function(){
 		document.getElementById("paths22").classList.add("firstDrow");
 		
 		$("#11_22").addClass("firstAppear");
-		$("#dot").addClass("middleAppear");
+		$("#minus").addClass("middleAppear");
 		$("#21_12").addClass("secondAppear");
 	  
     }, 100);
