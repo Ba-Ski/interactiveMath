@@ -1,0 +1,101 @@
+<html>
+
+<head>
+	<title>Test</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/3_2.css" media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/3_2.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="lib/lazy-line-painter-master/jquery.lazylinepainter-1.7.0.js"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+	</script>
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+	</script>
+</head>
+
+<body>
+
+	<!--            <div id="mainPart">-->
+	<div id="content">
+		<h2 id="header">Векторная алгебра</h2>
+		<h3 class="header">
+                § 3.2 Миноры и алгебраические дополнения.
+            </h3>
+		<div class="theoryWO">
+			<span class="theoryName">Определение</span>: Рассмотрим матрицу размера \(m\times n\) и выберем в ней произвольным образом \(S\)-строк и
+			<i>S</i>-столбцов (\(1 \leq S \leq min(m,n)\), где \(min(m,n)\)- меньшее из чисел \(m<\) и \(n\) ). Элементы, стоящие на пересечении выбранных строк и столбцов, образуют матрицу
+			порядка \(S\), определитель которой называется минором \(M\) порядка \(S\) данной матрицы.
+		</div>
+		<h4 class="example">Пример</h4>
+		<p>
+			Дана матрица \(
+			3 \times 5 = A = 
+			\begin{pmatrix}
+						a_{11} & a_{12} & a_{13} & a_{14} & a_{15}\\ 
+						a_{21} & a_{22} & a_{23} & a_{24} & a_{25} \\ 
+						a_{31} & a_{32} & a_{33} & a_{34} & a_{35}
+			\end{pmatrix}
+			\) Выберем в ней произвольные 2 строки и 2 столбца, например 2-я и 3-я строка и 3-й и 4-й столбец:
+			</p>
+			<div style="position: relative"><div id="btn1" class="btn" ></div></div>
+			<div class="matrixContainer mc">
+				<div id="fillArea" class="anm"></div>
+				<div id="bigArea" class="anm"></div>
+				<div id="circleArea" class="anm"></div>
+				\(
+				\begin{pmatrix}
+						a_{11} & a_{12} & \boldsymbol{a_{13}} & \boldsymbol{a_{14}} & a_{15}\\ 
+						\boldsymbol{a_{21}} & \boldsymbol{a_{22}} & \boldsymbol{a_{23}} & \boldsymbol{a_{24}} & \boldsymbol{a_{25}} \\ 
+						\boldsymbol{a_{31}} & \boldsymbol{a_{32}} & \boldsymbol{a_{33}} & \boldsymbol{a_{34}} & \boldsymbol{a_{35}}
+				\end{pmatrix}
+				\)
+				<div id="arrowDown"></div>
+				</div>
+				<p style="opacity:0" id="string1">
+					Тогда минор 2-го порядка для данной матрицы состоит из элементов, стоящих на пересечении выбранных строк и столбцов:
+				</p>
+				<div class="matrixContainer mc">
+					<div style="opacity:0" id="minor1">
+					\(
+					\begin{vmatrix}
+						a_{23} & a_{24} \\
+						a_{33} & a_ {34}
+					\end{vmatrix}
+					\)
+					</div>
+				</div>
+				
+				<p>
+					Если рассматривать квадратную матрицу порядка \(n\) и ёё минор порядка \(S\), тогда появляется ещё один вид минора:
+				</p>
+				<div class="theoryWO">
+					<span class="theoryName">Определение</span>: Определитель матрицы, оставшейся после вычёркивания тех \(S\)-строк и \(S\)-столбцов
+					 данной матрицы, которые входят в минор порядка \(S\) данной матрицы, называется <b>минором</b> \(M'\), <b>дополнительным к минору</b> \(M\). 
+				</div>
+				<p>
+					Очевидно, что дополнительным к минору \(M'\) будет минор \(M\).
+				</p>
+				<h4 class="example">Пример</h4>
+				<div style="position: relative"><div id="btn2" class="btn" ></div></div>
+				<div class="matrixContainer mc">					
+					<div id="minor2draw" class="anmMinor2"></div>
+					<div id="additionalMinor" class="anmMinor2"></div>
+					<div id="selected" class="anmMinor2"></div>
+				\(
+				A =
+				\begin{pmatrix}
+				a_{11} & a_{12} & a_{13} & a_{14} & a_{15} \\
+				a_{21} & a_{22} & a_{23} & a_{24} & a_{25} \\
+				a_{31} & a_{32} & a_{33} & a_{34} & a_{35} \\
+				a_{41} & a_{42} & a_{43} & a_{44} & a_{45} \\
+				a_{51} & a_{52} & a_{53} & a_{54} & a_{55} \\
+				\end{pmatrix}
+				\)	
+				</div>
+	</div>
+</body>
