@@ -110,8 +110,8 @@
 }
 #blank{
     position: absolute;
-    top: -6px;
-    left: 135px;
+    top: -5px;
+    left: 136px;
     background: white;
     width: 70px;
     height: 80px;
@@ -130,7 +130,9 @@
     width: 200px;
     height:100px;
 }
-
+.example{
+    font-style: italic;
+}
 #mine li{
     margin: 20px 0;
 }

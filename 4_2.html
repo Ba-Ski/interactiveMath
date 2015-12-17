@@ -1,13 +1,13 @@
 <html>
 
 <head>
-	<title>Test</title>
-	<meta charset="UTF-8">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/4_2.css" media="screen" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/4_2.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
 	<script type="text/javascript" src="lib/lazy-line-painter-master/jquery.lazylinepainter-1.7.0.js"></script>
 	<script type="text/x-mathjax-config">
 		MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
@@ -15,16 +15,39 @@
 	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 
 	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Starter Template - Materialize</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<style type="text/css">
+	#matrix{
+		position: absolute;
+		left: 560px;
+		z-index: -1;
+	}
+</style>
 </head>
 
 <body>
-
+<nav>
+	<div class="light-blue nav-wrapper breadcrumbs-padding">
+		<div class="col s12">
+			<a href="index.html" class="breadcrumb">Курс</a>
+			<a href="theory.html" class="breadcrumb">Теория</a>
+			<a href="#!" class="breadcrumb">§ 3.2</a>
+		</div>
+	</div>
+</nav>
 	<!--            <div id="mainPart">-->
 	<div id="content">
-		<h2 id="header">Векторная алгебра</h2>
-		<h3 class="header">
-                § 4.1 Вычисление определителя 2-го и 3-го порядка
-            </h3>
+		<h4 id="header">§3. Определитель n-го порядка.  Вычисление определителя 2-го, 3-го , n-го порядка по определению.</h4>
+		<h5 class="header">§ 3.2. Вычисление определителя 2-го, 3-го , n-го порядка по определению. </h5>
+		<p>
+			Рассмотрим частные случаи полученного определения.
+		</p>
 			<p>
 					Вычислим определитель \(n\)-го порядка по определению, данному в параграфе 4.1, при \(n\) = 2:
 					\[
@@ -39,9 +62,9 @@
 				Таким образом, мы получили простое правило для вычилсения \(det\) 2-го порядка. Для вычисления определителя 2-го порядка необходимо из произведения 
 				элемнотв главной диагонали вычесть произведение элементов побочной диагонали:
 			<div class="svgContainer" >
-				<div id="btn1" class="btn"></div>			
-			<svg id="svg3560" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="199" viewBox="0 0 324 199" width="324" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
- <image id="image3568" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAADHCAIAAADu271TAAAAA3NCSVQICAjb4U/gAAAQ3UlEQVR4 nO3dbUwU1x4G8LO7rAgslTerIsa3FDfEKqGLiEESYwlqtA2aaBDtionGojYaqikKKBI+gPUDaWIM NqYpaEMqNQ3Y1PoGRIyyC5WNaBobiDQxgrErBQKRmZ37Ye6d7t1Z1n2DOXN4fp8OM2dnz/w9z8ww O7gaQRAIAKifVukBAEBwIMwAjECYARiBMAMwAmEGYATCDMAIhBmAEQgzACMQZgBGIMwAjECYARiB MAMwAmEGYATCDMAIhBmAEQgzACMQZgBGIMwAjECYARiBMAMwAmEGYATCDMAIhBmAEQgzACMQZgBG IMwAjECYARiBMAMwAmEGYATCDMAIhBmAEQgzACMQZgBGIMwAjECYARhBUZjPnDnz2WefKT0KUAfM FjmNIAhKj+G/0tLSOjo6OI5TeiCgApgtchSdmQEgEBSFmZ5rBKAfZoscRWEGgEAgzACMoCjMuHAC 72G2yFEUZgAIBEVhxrEWvIfZIkdRmAEgEAgzACMoCjMunMB7mC1yFIUZAAKBMAMwgqIw48IJvIfZ IkdRmINieHi4srJyzZo1sbGx4eHhJpPp8uXL4iqO4968eaPs8GiDcjFFoEZycrJOp/P75Q6Ho66u Lj4+nhCi0+nWrl27c+fOmJgYQkhZWdmdO3diY2N1Ol11dXUQx6xeai9XgLOFSYyEmef5ffv2iYcn k8n04sULcfnAwMCCBQsIITNmzBDX7t27N3hDVisGyoUwy7FwmS0IQkFBwcWLFwkhKSkpzc3N8+bN E1fNnj27rq6OEPL27VtxyerVq5UaJyVQLmYpfTT518qVK/071p4/f17cl5CQkK6uLpe1Dodj8eLF 0v7abLZgDFbF2CiX37OFYao/M/f09Bw7dkxsm83mFStWuHTQaDRLliwR2waDISkpaUrHRxmUi2Gq D/OhQ4dGRkaktrwDz/MWi0Vsp6am6nQ6zxsUBKGxsbGnp8fLAfjaX1lKlaujo8NsNiclJUVGRppM pj179jx69Mj34YNHCl8ZOPHjwqm7u1vakaVLl7rtY7PZpD5FRUWeN9je3r5582ZCSHl5uTcD8LW/ shQpl8PhKC0t1ev1W7ZsOXHixMaNG8PCwgghGo3mwIED4+Pj/u0LLrPlQib/cDGJqqurpXZWVpbb Pvfv35fabm/ntLS0tLW1/fnnn11dXZ2dne98U1/700ORcl26dOnMmTNVVVXS5b3NZsvKyhoYGLhw 4UJERMTXX3/t227ARJQ+mvzL12Mtx3EGg0HakYaGBrfdzGaz1Ofly5fyDgcPHgwNDV20aNH27dsz MjLEnh5ONb72p4Qi5erv7zcYDNnZ2Q6Hw3l5Y2Oj9C537971Y3dwZpZTcZi7urqkCaHRaP7++2+3 3T744AOxz8KFC9+5zcLCQp/C6Wt/BSlSroaGBkKIXq/fsWOH8xU1z/PSbTb/PspGmOVUfAPs4cOH UttoNEZHR8v7vHr16tmzZ2J71apVUzQyKilSLqvVSggZHx+vr6+/fv26tFyr1ZpMJrF97do1AQ9a B4OKw/zkyROpnZKS4rbPgwcPpHZaWtqkj4liipRr/vz5UnvOnDluV9nt9vHx8cDfC1QcZofDIbUn mp3Ot3OkU01bW1tRUdHg4OCkDo82ipRr//795eXln3766XfffedyO623t1dszJ07V3p6FAKh4rvZ 4h8JiOQPP4ik2anVaqUZfPLkydbW1i+//HKyR0gVRcql1+uLi4vdrpLuhKenp/uxZZBT8Zk5ISFB akdFRck79Pf3S88/LF++PCIighBit9vv3buXnp4eGxs7NeOkBFXlslqtfX19Yru0tDSIW57OKApz f3+/86XgO6Wmpkptu93uspbn+by8vNHRUfFH6aLx5s2bPM9v3bo1sMGqDz3lcjgchw8fFttlZWXJ ycl+bMTX2TIdUBTmf/75x6e7momJidnZ2WK7vb3deRXHcbt37759+7a0ZNmyZWKjvr6eEJKTk+N5 477eX6X/fiw95aqtrRXvtJnN5pKSEu9f6MzX2TIdUBRmPxQVFWk0GkLI+fPn//rrL3FhX1/fJ598 8sMPP2zYsEH6xe/58+eEkNbW1p9++mnXrl3Sh5wTYS/MhI5ydXR0FBQUEEKOHDly6dIlcTwQHIp9 wi0THh7ux3hqampCQkIIIXFxcbm5uZs2bRIf/S0uLuY4zmKxiD+GhYXl5uZGRkbGxMQMDAxMtDXp KYjTp0978+6+9lecsuXq7e0VP6CqqKhweSbMV/7NFrZRVA6//3msVmtubm5CQoJOpzMYDPn5+RaL RVprs9m2bdsWFxen1+szMzOfPn3qYVPS7Dx16pQ3b+1rfxooVa7Xr18bjUatVltTUxP4XiDMcir+ aEry0UcfXblyZaK1H3744dWrV33dpsDiZbZIkXKNjY3l5OT09PT8+OOPzrfTzp49+/333z969Oid f2sJ78RCmCcDw2GeDJ533+Fw7Nmzp7Oz89dff123bp3zqt9++43jOCQ5KNR9AwxU4fjx4zdu3Lh1 65ZLksfGxiwWi3TnHAJE0ZmZqpMbzsw+8bD71dXV586di4yMzMvLE//OieM4nud5nh8ZGRkcHDQa jcF9x2mLojArxWaztbS0jI6ODg8PS78uXrlyJTQ0dNasWRqNJisry/ns4Wt/xvi0+01NTUePHiWE DA0NDQ0Nud2gf2EGN5S57+aO+KHI1L/vN998QwgJCQmZOXOmwWCIjo6OiooyGAwzZ84UP8Wpra0N pD9jfNr9zz///J0zsK2tzY9hKDVbaKYRqLlcCQ8PHx0dpWc8QDPMFjmKboAZDAY8DwRewmyRoyjM CxYs0GopGg/QDLNFjqJy4JIJvIfZIkdRmAEgEBSFGcda8B5mixxFYQaYMhcvXtRMgrNnzyq4U3ho BKajJUuWZGRk+HR6d8mtfIlGo1H2ARiKwowLJ/BegLNl/fr169evD9ZgKIHLbABGIMwAjECYARiB MAMwAmEGYARFd7MBpkxzc3NZWVnQP0ApLCzcsmVLcLfpPYQZpqM//vijubk56JvdtGmTgmGm6O+Z k5OTHz9+zHGc0gMBFcBskcPvzACMQJgBGIEwAzCCojDjSzrBe5gtchSFGV/SCd7DbJGjKMwAEAiE GYARCDMAIxBmAEYgzACMQJgBGEFRmPFJA3gPs0WOojADQCAQZgBGIMwAjKAozPiSTvAeZoscRWHG l3SC9zBb5CgqB+5PgvcwW+QoCnNQDA8PV1ZWrlmzJjY2Njw83GQyXb58WVzFcdybN2+UHR5tUC6m CNRITk7W6XR+v9zhcNTV1cXHxxNCdDrd2rVrd+7cGRMTQwgpKyu7c+dObGysTqerrq4O4pjVS+3l CnC2MImRMPM8v2/fPvHwZDKZXrx4IS4fGBhYsGABIWTGjBni2r179wZvyGrFQLkQZjkWLrMFQSgo KLh48SIhJCUlpbm5ed68eeKq2bNn19XVEULevn0rLlm9erVS46QEysUspY8m/1q5cqV/x9rz58+L +xISEtLV1eWy1uFwLF68WNpfm80WjMGqGBvl8nu2MEz1Z+aenp5jx46JbbPZvGLFCpcOGo1myZIl YttgMCQlJbndTkdHh9lsTkpKioyMNJlMe/bsefTokTcDEAShsbGxp6fH3z2YUkqVy+/ygg+UPpr8 y79j7caNG6V9+f333+UdOI577733xA7r1q2Td3A4HKWlpXq9fsuWLSdOnNi4cWNYWBghRKPRHDhw YHx83MO7t7e3b968mRBSXl7u68gVMfXlCqS8HuDMLKfuMHd3d0tTc+nSpW772Gw2qU9RUZG8w7ff fksIqaqqkpZ0dXW9//774ksKCwtd+jc3N1dUVOTn56ekpEhbVkWYFSmXr/29hDDLqTvM+/fvl2be gQMH3Pa5cOGC1Ofnn392Wdvf328wGLKzsx0Oh/PyxsZG6VV37951XnXw4MHQ0NBFixZt3749IyND RWGe+nL5UV4vIcxyKg4zx3EGg0GaEw0NDW67mc1mqc/Lly9d1jY0NBBC9Hr9jh07nC/5eJ6XfnX0 8PFMYWGhWsKsSLkCLK8HCLOcim+AdXd3Dw8Pi22NRrNu3Tq33e7fvy82Fi5cOGfOHJe1VquVEDI+ Pl5fX3/9+nVpuVarNZlMYvvatWuC+h8eVKRc06e8NFBxmB8+fCi1jUZjdHS0vM+rV6+ePXsmtlet WiXvMH/+fKntMnelVXa7fXx8PPABK0uRck2f8tJAxd/P/OTJE6ntfC/K2YMHD6R2WlqavMP+/fvt drvVas3JyXF5QKK3t1dszJ07V3oiSr0UKdf0KS8NVBxm568ammh2SheNxOlU09bW1tTU9NVXX82a NUuv1xcXF7t9bWdnp9hIT08PzogVpUi5pk95aaDiy2zxjwRE8ocfRNLs1Gq10gw+efJkZWWl5+/p tlqtfX19Yru0tDQIw1UaVeVir7w0UHGYExISpHZUVJS8Q39/v8ViEdvLly+PiIgghNjt9nv37qWn p8fGxk60ZYfDcfjwYbFdVlaWnJwczHErhJ5yMVleGqg4zKmpqVLbbre7rOV5Pi8vb3R0VPxRumi8 efMmz/Nbt271sOXa2lrxt0ez2VxSUuLNYOi/H0tPufwoL3hDxWFOTEzMzs4W2+3t7c6rOI7bvXv3 7du3pSXLli0TG/X19YSQnJyciTbb0dFRUFBACDly5MilS5e8/I+m6A8zJeXyr7zgFUU/5f4/fjwG 0NzcLM6G+Pj4vr4+ceHz58/FJ5A3bNgg/eJ36NAhQRBaWloIIbt27Zpog729veInKBUVFS4PLbkl PTRy+vRpn0auCMXL5Wt/D/DQiJy6wywIQk1NTUhICCEkLi4uNzd306ZN4nP8xcXFHMdZLBbxx7Cw sNzc3MjIyJiYmIGBAbebev36tdFo1Gq1NTU1Xr67FOZTp075OnJFKFguP8rrAcIsp/owC4JgtVpz c3MTEhJ0Op3BYMjPz7dYLNJam822bdu2uLg4vV6fmZn59OlTtxsZHR3NzMycMWOGy3OOVVVVy5cv 5zjO7aukMJeWlvoxckUoUi7/yusBwizHQpgDx/P8jh07DAbDnTt3XFZ9/PHHRqNxohdKYS4pKZnk MVLE13L5XV4PEGY5Fd8AC6Ljx4/fuHHj1q1bLk8sj42NWSwW6W4QiHwtF8o7NVT8BFiwVFdXnzt3 LjIyMi8vTzzYcxzH8zzP8yMjI4ODg0aj8Z0bEai/mx0svpYrKOUFb0z3MDc1NR09epQQMjQ0NDQ0 5LaPy2yz2WwtLS2jo6PDw8NXr14VF165ciU0NHTWrFkajSYrK4vVs42v5fKjvOC36R7mX3755Z0n 1cTEROcfW1tbv/jii5D/iY6OFgRhYGCgoqKC4ziO42pra1kNs6/l8qO84DcNPdeHycnJjx8/9vwM MIAIs0UON8AAGEHRZXZmZqb8v7YAcAuzRY6iy2wACAQuswEYgTADMAJhBmAEwgzACIQZgBEIMwAj EGYARiDMAIxAmAEYgTADMAJhBmAEwgzACIQZgBEIMwAjEGYARiDMAIxAmAEYgTADMAJhBmAEwgzA CIQZgBEIMwAjEGYARiDMAIxAmAEYgTADMAJhBmAEwgzACIQZgBEIMwAjEGYARiDMAIxAmAEYgTAD MAJhBmAEwgzACIQZgBEIMwAjEGYARiDMAIxAmAEYgTADMAJhBmAEwgzACIQZgBEIMwAjEGYARiDM AIxAmAEYgTADMAJhBmAEwgzACIQZgBEIMwAjEGYARiDMAIz4D7nM8MmVX1k2AAAAAElFTkSuQmCC  " height="199" width="324" y="0" x="0" preserveAspectRatio="none"/>
+
+				<div id="btn1" class="mybtn"></div>
+			<svg style="display: inline-block;" id="svg3560" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="199" viewBox="0 0 324 199" width="324" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
  <g>
 	 <defs>
 		 <clipPath id="1_11">
@@ -63,6 +86,7 @@
    <path clip-path="url(#1_22)" id="paths22" class="path" fill="none"  d="m184.54 154.7c-79.257-43.05 24.136-59.147 37.183-33.052 9.8074 19.615-20.346 32.863-34.659 25.707"/>
  </g>
 </svg>
+		<img id="matrix" src="resources/matrix.png">
 <div class="numContainer">
 <div id="11_22" style="display: inline-block; opacity: 0;">
 	\(a_{11} a_{22}\)
@@ -76,7 +100,7 @@
 </div>
 </div>
 <p>
-	Также это правило можно проилбстрировать схемой
+	Также это правило можно проиллюстрировать схемой
 	\(
 	\begin{vmatrix}
 	\bullet & \bullet\\
@@ -94,7 +118,8 @@
 	\end{vmatrix}
 	\)
 </p>
-<h4 class="example">Пример:</h4>
+		<br>
+<h6 class="example">Пример:</h6>
 <p>
 	\(
 	\begin{vmatrix}
@@ -123,6 +148,7 @@
 		\end{align}
 		\] 
 		</p>
+		<br>
 		<p>
 			<u>Правило вычисления определителей 3-го порядка</u> удобно илюстрировать мнемонической схемой, называемой <span class="underItal">"правилом треугольника:"</span>
 			<!--\[
@@ -192,13 +218,13 @@
 \]
 	</p>-->
 	<div style="text-align: center;">
-	<img  src="resources/another_matrix.png" alt="another method" >
+	<img src="resources/another_matrix.png" alt="another method" >
 	</div>
 	<div style="position:relative;">
 	<p>
 		Алгоритм вычисления значения определителя 3-го порядка представлен ниже: 
 		</p>
-		<div id="btn2" class="btn" ></div>	
+		<div id="btn2" class="mybtn" ></div>
 		<ol id="algList">
 			<li id="list1" style="opacity:0;">Транспонируем исходную матрицу и выпишем её элементы.</li>
 			<div class="matrixContainer">
@@ -277,7 +303,7 @@
 			
 				
 				</div>
-				<h4 class="example">Пример</h4>
+				<h6 class="example">Пример</h6>
 				<p>
 					Вычислить определитель матрицы \(A = \begin{pmatrix}
 														2 & -2 & 1 \\
@@ -335,7 +361,12 @@
 								det A = 2 \cdot 3 \cdot (-3) + (-1)\cdot 5 \cdot 1 + 0 \cdot (-2) \cdot 4 - 0 \cdot 3 \cdot 1 - 2 \cdot 5 \cdot 4 - (-1) \cdot (-2) \cdot (-3) = -57
 								\) 
 							</li>
+		</ol>
 				</p>
+		<div class="endline">
+			<h2 style="text-align:right" class="right light-blue-text"><a href="4_2.html" class="btn-floating btn-block waves-effect waves-purple light-blue"><i class="material-icons">keyboard_arrow_right</i></a></h2>
+			<h2 style="text-align:left" class="left light-blue-text"><a href="3_1.html" class="btn-floating btn-block waves-effect waves-purple light-blue"><i class="material-icons">keyboard_arrow_left</i></a></h2>
+		</div>
 	</div>
 </body>
 

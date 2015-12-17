@@ -96,15 +96,6 @@
     animation-name: apperance;
     animation-fill-mode: forwards; 
 }
-@keyframes apperance{
-    from {
-        opacity:0;
-    }
-
-    to {
-        opacity:1;
-    }
-}
 .numContainer{
     position: absolute;
     bottom: 70px;
