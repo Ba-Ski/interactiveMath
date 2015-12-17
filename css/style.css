@@ -5,7 +5,8 @@ html{
 
 body{
     height: 100%;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue",Helvetica,sans-serif,Arial;
+    font-size: ;
 }
 
 #header{
@@ -37,6 +38,9 @@ body{
 }
 .theoryName{
     text-decoration: underline;
+    font-weight: bold;
+}
+.ExamplName{
     font-weight: bold;
 }
 .code-result__iframe{
@@ -186,6 +190,11 @@ body{
 .endline
 {
     margin-bottom: 150px;
+}
+
+.panel{
+    background-color: #81d4fa;
+    display: none;
 }
 /*.container{
     height: 100%;
