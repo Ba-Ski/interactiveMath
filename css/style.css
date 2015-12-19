@@ -5,8 +5,8 @@ html{
 
 body{
     height: 100%;
-    font-family: "Helvetica Neue",Helvetica,sans-serif,Arial;
-    font-size: ;
+    /*font-family: "Helvetica Neue",Helvetica,sans-serif,Arial;*/
+
 }
 
 #header{
@@ -195,6 +195,7 @@ body{
 .panel{
     background-color: #81d4fa;
     display: none;
+    padding: 50px;
 }
 /*.container{
     height: 100%;

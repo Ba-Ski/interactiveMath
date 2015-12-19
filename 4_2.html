@@ -22,10 +22,11 @@
 	<!-- CSS  -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 <style type="text/css">
 	#matrix{
 		position: absolute;
-		left: 560px;
+		left: 580px;
 		z-index: -1;
 	}
 </style>
@@ -63,7 +64,8 @@
 				элемнотв главной диагонали вычесть произведение элементов побочной диагонали:
 			<div class="svgContainer" >
 
-				<div id="btn1" class="mybtn"></div>
+				<!--<div id="btn1" class="mybtn"></div>-->
+			<div id="btn1" style="margin-top: 60px" class=" left btn-floating waves-effect waves-purple light-blue"><i class="material-icons">play_arrow</i></div>
 			<svg style="display: inline-block;" id="svg3560" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="199" viewBox="0 0 324 199" width="324" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
  <g>
 	 <defs>
@@ -224,11 +226,11 @@
 	<p>
 		Алгоритм вычисления значения определителя 3-го порядка представлен ниже: 
 		</p>
-		<div id="btn2" class="mybtn" ></div>
+		<div id="btn2" class=" left btn-floating waves-effect waves-purple light-blue"><i class="material-icons">play_arrow</i></div>
 		<ol id="algList">
 			<li id="list1" style="opacity:0;">Транспонируем исходную матрицу и выпишем её элементы.</li>
 			<div class="matrixContainer">
-			<div id="matrix" style="display: inline-block; opacity: 0;">
+			<div id="matrixx" style="display: inline-block; opacity: 0;">
 				\(
 				A =
 				\begin{pmatrix}
@@ -312,9 +314,16 @@
 													\end{pmatrix} 
 													\)
 				</p>
-				<h5 style="font-style:italic;">Решение</h5>
+				<div style="text-align: right">
+					<a id="flip1" class="waves-effect waves-light btn"><i class="material-icons left">dehaze</i>решение</a>
+				</div>
+				<div id="panel1" class="panel">
+				<!--<h5 style="font-style:italic;">Решение</h5>-->
+					<p>
+						<b>Решение:</b>
+					</p>
 				<p>
-					Вычислим определитель по правилу Саррюса:
+					 Вычислим определитель по правилу Саррюса:
 					<ol id="mine">
 						<li>
 							\(
@@ -363,11 +372,13 @@
 							</li>
 		</ol>
 				</p>
+					</div>
 		<div class="endline">
 			<h2 style="text-align:right" class="right light-blue-text"><a href="4_2.html" class="btn-floating btn-block waves-effect waves-purple light-blue"><i class="material-icons">keyboard_arrow_right</i></a></h2>
 			<h2 style="text-align:left" class="left light-blue-text"><a href="3_1.html" class="btn-floating btn-block waves-effect waves-purple light-blue"><i class="material-icons">keyboard_arrow_left</i></a></h2>
 		</div>
 	</div>
+<script src="js/materialize.js"></script>
 </body>
 
 </html>

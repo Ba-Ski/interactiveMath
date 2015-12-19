@@ -1,3 +1,10 @@
+$(document).ready(function(){
+    $("#flip1").click(function(){
+        $("#panel1").slideToggle("slow");
+    });
+
+});
+
 $(function () {
     $('#btn1').click(function () {
 
@@ -181,7 +188,7 @@ var rightLines = {
 $(function () {
     $('#btn2').click(function () {
         addApperanceCSS("list1", "0s", "0.5s", "forwards", "apperance");
-        addApperanceCSS("matrix", "1s", "0.5s", "forwards", "apperance");
+        addApperanceCSS("matrixx", "1s", "0.5s", "forwards", "apperance");
         addApperanceCSS("tmatrix", "1.5s", "0.5s", "forwards", "apperance");
         addApperanceCSS("list2", "2s", ".5s", "forwards", "apperance");
         addApperanceCSS("widematrix", "2.5s", ".5s", "forwards", "apperance");
