@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    $("#flip1").click(function(){
+$(document).ready(function () {
+    $("#flip1").click(function () {
         $("#panel1").slideToggle("slow");
     });
 
@@ -9,20 +9,40 @@ $(function () {
     $('#btn1').click(function () {
 
 
-        document.getElementById("paths11").classList.remove("firstDrow");
-        document.getElementById("paths12").classList.remove("secondDrow");
-        document.getElementById("paths21").classList.remove("secondDrow");
-        document.getElementById("paths22").classList.remove("firstDrow");
+        /*document.getElementById("paths11").classList.remove("firstDrow");
+         document.getElementById("paths12").classList.remove("secondDrow");
+         document.getElementById("paths21").classList.remove("secondDrow");
+         document.getElementById("paths22").classList.remove("firstDrow");*/
+
 
         $("#11_22").removeClass("firstAppear");
         $("#minus").removeClass("middleAppear");
         $("#21_12").removeClass("secondAppear");
 
         setTimeout(function () {
-            document.getElementById("paths11").classList.add("firstDrow");
-            document.getElementById("paths12").classList.add("secondDrow");
-            document.getElementById("paths21").classList.add("secondDrow");
-            document.getElementById("paths22").classList.add("firstDrow");
+            /*document.getElementById("paths11").classList.add("firstDrow");
+             document.getElementById("paths12").classList.add("secondDrow");
+             document.getElementById("paths21").classList.add("secondDrow");
+             document.getElementById("paths22").classList.add("firstDrow");*/
+
+            $('#matrix_2x2_1').lazylinepainter(
+                {
+                    "svgData": matrix_2x2_1,
+                    "drawSequential": false,
+                    "strokeWidth": 2,
+                    "strokeColor": "#e09b99"
+                }).lazylinepainter('paint');
+
+
+            $('#matrix_2x2_2').lazylinepainter(
+                {
+                    "svgData": matrix_2x2_2,
+                    "drawSequential": false,
+                    "strokeWidth": 2,
+                    "strokeColor": "#e09b99",
+                    "delay": 2000
+                }).lazylinepainter('paint');
+
 
             $("#11_22").addClass("firstAppear");
             $("#minus").addClass("middleAppear");
@@ -31,14 +51,44 @@ $(function () {
         }, 100);
     });
 });
-/* 
- * Lazy Line Painter - Path Object 
- * Generated using 'SVG to Lazy Line Converter'
- * 
- * http://lazylinepainter.info 
- * Copyright 2013, Cam O'Connell  
- *  
- */
+
+var matrix_2x2_1 = {
+    "matrix_2x2_1": {
+        "strokepath": [
+            {
+                "path": "m89.723 92.828c-11.322 0.237-21.493-6.694-27.665-15.951-23.704-35.556 56.082-48.133 56.082-6.729 0 7.3919-7.5794 12.479-9.9692 18.692",
+                "duration": 600
+            },
+            {
+                "path": "m175.21 153.14c-5.2583-1.4305-9.0414-5.1228-11.465-9.9692-34.382-68.765 91.819-30.886 47.603 4.4862-4.9862 3.989-9.817 7.2381-14.455 10.717-6.3572 4.7679-16.189 7.6146-23.428 10.717",
+                "duration": 600
+            }
+        ],
+        "dimensions": {
+            "width": 324,
+            "height": 199
+        }
+    }
+};
+var matrix_2x2_2 = {
+    "matrix_2x2_2": {
+        "strokepath": [
+            {
+                "path": "m74.52 162.11c-3.144-6.43-11.327-12.43-14.954-19.69-28.325-56.645 101.98-44.906 48.354 8.73-3.8612 3.8612-13.268 5.2191-18.194 6.9785",
+                "duration": 600
+            },
+            {
+                "path": "m190.91 98.809c-6.6195-2.3131-14.229-7.6358-18.443-13.957-3.0818-4.6227-8.0358-7.3183-10.966-11.714-1.9777-2.9666-1.8899-13.272-0.74769-16.698 12.805-38.415 87.111 0.46384 47.852 29.908-4.1427 3.107-8.8627 4.4632-13.458 6.2308",
+                "duration": 600
+            }
+        ],
+        "dimensions": {
+            "width": 324,
+            "height": 199
+        }
+    }
+};
+
 
 var pathObj1 = {
     "tarrow": {
@@ -69,15 +119,15 @@ var pathObj1 = {
             "height": 100
         }
     }
-}; 
+};
 /* 
-* Lazy Line Painter - Path Object 
-* Generated using 'SVG to Lazy Line Converter'
-* 
-* http://lazylinepainter.info 
-* Copyright 2013, Cam O'Connell  
-*  
-*/
+ * Lazy Line Painter - Path Object
+ * Generated using 'SVG to Lazy Line Converter'
+ *
+ * http://lazylinepainter.info
+ * Copyright 2013, Cam O'Connell
+ *
+ */
 
 var pathObj2 = {
     "arrows": {
@@ -116,16 +166,16 @@ var pathObj2 = {
             "height": 213
         }
     }
-}; 
- 
+};
+
 /* 
-* Lazy Line Painter - Path Object 
-* Generated using 'SVG to Lazy Line Converter'
-* 
-* http://lazylinepainter.info 
-* Copyright 2013, Cam O'Connell  
-*  
-*/
+ * Lazy Line Painter - Path Object
+ * Generated using 'SVG to Lazy Line Converter'
+ *
+ * http://lazylinepainter.info
+ * Copyright 2013, Cam O'Connell
+ *
+ */
 
 var leftLines = {
     "leftLines": {
@@ -148,15 +198,15 @@ var leftLines = {
             "height": 115
         }
     }
-}; 
+};
 /* 
-* Lazy Line Painter - Path Object 
-* Generated using 'SVG to Lazy Line Converter'
-* 
-* http://lazylinepainter.info 
-* Copyright 2013, Cam O'Connell  
-*  
-*/
+ * Lazy Line Painter - Path Object
+ * Generated using 'SVG to Lazy Line Converter'
+ *
+ * http://lazylinepainter.info
+ * Copyright 2013, Cam O'Connell
+ *
+ */
 
 var rightLines = {
     "rightLines": {
@@ -179,12 +229,8 @@ var rightLines = {
             "height": 115
         }
     }
-}; 
+};
 
- 
-/* 
- Setup and Paint your lazyline! 
- */
 $(function () {
     $('#btn2').click(function () {
         addApperanceCSS("list1", "0s", "0.5s", "forwards", "apperance");
@@ -199,7 +245,7 @@ $(function () {
         addApperanceCSS("rightwmatrix", "8s", ".5s", "forwards", "apperance");
         addApperanceCSS("list5", "9s", ".5s", "forwards", "apperance");
         addApperanceCSS("result", "9s", ".5s", "forwards", "apperance");
-        
+
         $('#tarrow').lazylinepainter(
             {
                 "svgData": pathObj1,
