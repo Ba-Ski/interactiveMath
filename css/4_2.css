@@ -8,15 +8,16 @@
     
 }
 
-.firstDrow{
-    animation-delay: 0s, 2s;
+.Disappear {
+    animation-delay: 0.5s;
     animation-timing-function: linear;    
-    animation-iteration-count: 1,1;
-    animation-duration: 2s, 0.5s;
-    animation-name: dash, dashDisap;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-name: dashDisap;
+    animation-fill-mode: forwards;
 }
 .secondDrow{    
-    animation-delay: 2s, 4s;
+    animation-delay:4s;
     animation-timing-function: linear;    
     animation-iteration-count: 1,1;
     animation-duration: 2s, 0.5s;
@@ -43,14 +44,27 @@
     }
    
 }.numContainer{
-    position: absolute;
-    bottom: 100px;
+    position: relative;
+    display: inline-block;
+    /*bottom: 100px;
     left: 40%;
-    right: 0;
-    margin: 0 auto;
+    right: 0;*/
     font: 28px "Comic Sans MS", cursive, sans-serif;
     vertical-align: middle;
 }
+.matrix_2x2{
+    position: absolute;
+    width: 324px;
+    height: 199px;
+    top:0px;
+    left:0px;
+}
+.svgPlace {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .firstAppear{
     animation-delay: 1s;
     animation-duration: 0.1s;
@@ -134,3 +148,4 @@
 #mine li{
     margin: 20px 0;
 }
+

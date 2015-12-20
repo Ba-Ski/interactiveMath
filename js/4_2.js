@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    $("#flip1").click(function(){
+$(document).ready(function () {
+    $("#flip1").click(function () {
         $("#panel1").slideToggle("slow");
     });
 
@@ -9,20 +9,42 @@ $(function () {
     $('#btn1').click(function () {
 
 
-        document.getElementById("paths11").classList.remove("firstDrow");
-        document.getElementById("paths12").classList.remove("secondDrow");
-        document.getElementById("paths21").classList.remove("secondDrow");
-        document.getElementById("paths22").classList.remove("firstDrow");
+        /*document.getElementById("paths11").classList.remove("firstDrow");
+         document.getElementById("paths12").classList.remove("secondDrow");
+         document.getElementById("paths21").classList.remove("secondDrow");
+         document.getElementById("paths22").classList.remove("firstDrow");*/
+
 
         $("#11_22").removeClass("firstAppear");
         $("#minus").removeClass("middleAppear");
         $("#21_12").removeClass("secondAppear");
 
         setTimeout(function () {
-            document.getElementById("paths11").classList.add("firstDrow");
-            document.getElementById("paths12").classList.add("secondDrow");
-            document.getElementById("paths21").classList.add("secondDrow");
-            document.getElementById("paths22").classList.add("firstDrow");
+            /*document.getElementById("paths11").classList.add("firstDrow");
+             document.getElementById("paths12").classList.add("secondDrow");
+             document.getElementById("paths21").classList.add("secondDrow");
+             document.getElementById("paths22").classList.add("firstDrow");*/
+
+            $('#matrix_2x2_1').lazylinepainter(
+                {
+                    "svgData": matrix_2x2_1,
+                    "drawSequential": false,
+                    "strokeWidth": 3,
+                    "strokeColor": "#e09b99",
+                    "onComplete":  function(){ $("#matrix_2x2_1").addClass("Disappear"); }
+                }).lazylinepainter('paint');
+
+
+            $('#matrix_2x2_2').lazylinepainter(
+                {
+                    "svgData": matrix_2x2_2,
+                    "drawSequential": false,
+                    "strokeWidth": 3,
+                    "strokeColor": "#e09b99",
+                    "delay": 2000,
+                    "onComplete":  function(){$("#matrix_2x2_2").addClass("Disappear");}
+                }).lazylinepainter('paint');
+
 
             $("#11_22").addClass("firstAppear");
             $("#minus").addClass("middleAppear");
@@ -31,14 +53,44 @@ $(function () {
         }, 100);
     });
 });
-/* 
- * Lazy Line Painter - Path Object 
- * Generated using 'SVG to Lazy Line Converter'
- * 
- * http://lazylinepainter.info 
- * Copyright 2013, Cam O'Connell  
- *  
- */
+
+var matrix_2x2_1 = {
+    "matrix_2x2_1": {
+        "strokepath": [
+            {
+                "path": "m75.428 89.703c-8.641-5.198-16.122-17.991-13.394-28.902 11.167-44.668 111.52 18.501 16.918 38.771",
+                "duration": 600
+            },
+            {
+                "path": "m171.3 149.27c-12.819-3.2929-12.689-11.337-12.689-23.263 0-47.618 121.96-2.5886 25.378 29.607",
+                "duration": 600
+            }
+        ],
+        "dimensions": {
+            "width": 324,
+            "height": 175
+        }
+    }
+};
+var matrix_2x2_2 = {
+    "matrix_2x2_2": {
+        "strokepath": [
+            {
+                "path": "m67.673 147.86c-10.419-0.53624-11.279-9.497-11.279-18.328 0-47.632 104.34-8.6419 41.238 22.91-7.4312 3.7156-17.186 4.5538-24.673 7.0493",
+                "duration": 600
+            },
+            {
+                "path": "m169.18 90.056c-8.1629-0.47641-10.222-8.5487-10.222-15.861 0-50.543 88.815-21.494 57.099 10.222-9.5713 9.5713-21.412 16.809-35.247 17.623",
+                "duration": 600
+            }
+        ],
+        "dimensions": {
+            "width": 324,
+            "height": 175
+        }
+    }
+};
+
 
 var pathObj1 = {
     "tarrow": {
@@ -69,15 +121,15 @@ var pathObj1 = {
             "height": 100
         }
     }
-}; 
+};
 /* 
-* Lazy Line Painter - Path Object 
-* Generated using 'SVG to Lazy Line Converter'
-* 
-* http://lazylinepainter.info 
-* Copyright 2013, Cam O'Connell  
-*  
-*/
+ * Lazy Line Painter - Path Object
+ * Generated using 'SVG to Lazy Line Converter'
+ *
+ * http://lazylinepainter.info
+ * Copyright 2013, Cam O'Connell
+ *
+ */
 
 var pathObj2 = {
     "arrows": {
@@ -116,16 +168,16 @@ var pathObj2 = {
             "height": 213
         }
     }
-}; 
- 
+};
+
 /* 
-* Lazy Line Painter - Path Object 
-* Generated using 'SVG to Lazy Line Converter'
-* 
-* http://lazylinepainter.info 
-* Copyright 2013, Cam O'Connell  
-*  
-*/
+ * Lazy Line Painter - Path Object
+ * Generated using 'SVG to Lazy Line Converter'
+ *
+ * http://lazylinepainter.info
+ * Copyright 2013, Cam O'Connell
+ *
+ */
 
 var leftLines = {
     "leftLines": {
@@ -148,15 +200,15 @@ var leftLines = {
             "height": 115
         }
     }
-}; 
+};
 /* 
-* Lazy Line Painter - Path Object 
-* Generated using 'SVG to Lazy Line Converter'
-* 
-* http://lazylinepainter.info 
-* Copyright 2013, Cam O'Connell  
-*  
-*/
+ * Lazy Line Painter - Path Object
+ * Generated using 'SVG to Lazy Line Converter'
+ *
+ * http://lazylinepainter.info
+ * Copyright 2013, Cam O'Connell
+ *
+ */
 
 var rightLines = {
     "rightLines": {
@@ -179,12 +231,8 @@ var rightLines = {
             "height": 115
         }
     }
-}; 
+};
 
- 
-/* 
- Setup and Paint your lazyline! 
- */
 $(function () {
     $('#btn2').click(function () {
         addApperanceCSS("list1", "0s", "0.5s", "forwards", "apperance");
@@ -199,7 +247,7 @@ $(function () {
         addApperanceCSS("rightwmatrix", "8s", ".5s", "forwards", "apperance");
         addApperanceCSS("list5", "9s", ".5s", "forwards", "apperance");
         addApperanceCSS("result", "9s", ".5s", "forwards", "apperance");
-        
+
         $('#tarrow').lazylinepainter(
             {
                 "svgData": pathObj1,
