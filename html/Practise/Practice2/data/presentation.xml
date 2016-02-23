@@ -1,0 +1,1623 @@
+<?xml version="1.0"?>
+<presentation title="Матан(исправленная)1" width="960.0000000" height="540.0000000" thmbWidth="0.0000000" thmbHeight="0.0000000" frameRate="50.0000000" looping="1" startingSlideShow="" pptVersion="2013" type="compound" hasExternalAudio="0" uid="{89443ABD-DDEE-46C4-870D-DEF84A828451}">
+	<presenters/>
+	<references/>
+	<soundAssets/>
+	<sharedAssetsLibrary src="assets.swf"/>
+	<graphicAssets/>
+	<backgroundSound soundAssetId="" looping="0" volume="1.0000000"/>
+	<narration/>
+	<settings>
+		<navigation>
+			<keyboard enabled="1">
+				<actions>
+					<action name="playPause">
+						<shortcut code="32" control="0" shift="0"/>
+					</action>
+					<action name="nextSlide">
+						<shortcut code="34" control="0" shift="0"/>
+					</action>
+					<action name="previousSlide">
+						<shortcut code="33" control="0" shift="0"/>
+					</action>
+					<action name="nextStep">
+						<shortcut code="13" control="0" shift="0"/>
+					</action>
+					<action name="previousStep">
+						<shortcut code="13" control="0" shift="1"/>
+					</action>
+					<action name="firstSlide">
+						<shortcut code="36" control="1" shift="0"/>
+					</action>
+					<action name="lastSlide">
+						<shortcut code="35" control="1" shift="0"/>
+					</action>
+					<action name="lastViewedSlide">
+						<shortcut code="8" control="0" shift="0"/>
+					</action>
+					<action name="slideStart">
+						<shortcut code="36" control="0" shift="0"/>
+					</action>
+					<action name="slideEnd">
+						<shortcut code="35" control="0" shift="0"/>
+					</action>
+					<action name="seekForward">
+						<shortcut code="39" control="0" shift="0"/>
+					</action>
+					<action name="seekBackward">
+						<shortcut code="37" control="0" shift="0"/>
+					</action>
+					<action name="volumeUp">
+						<shortcut code="38" control="0" shift="0"/>
+					</action>
+					<action name="volumeDown">
+						<shortcut code="40" control="0" shift="0"/>
+					</action>
+					<action name="toggleFullscreen">
+						<shortcut code="70" control="1" shift="0"/>
+					</action>
+				</actions>
+			</keyboard>
+			<mouse enabled="1" target="step"/>
+			<gesture zoom="1"/>
+		</navigation>
+		<appearance fullScreen="1" showSlidePreloader="1"/>
+		<playback autoStart="1" syncWithVideoNarration="1" enableVideoControl="1" resumePresentationPlayback="prompt"/>
+	</settings>
+	<slides embedded="0">
+		<slide index="0" title="§2. Линейные операции над матрицами и их свойства." titleNormalized="§2. линейные операции над матрицами и их свойства." src="slide1.swf" size="1079" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>§2. Линейные операции над матрицами и их свойства.</text>
+		</slide>
+		<slide index="1" title="Раздел 1: Сложение матриц" titleNormalized="раздел 1: сложение матриц" src="slide2.swf" size="5619" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Раздел 1: Сложение матриц
+Операции возможны только для матриц одинаковой размерности.
+Сумма двух матриц Am×n и Bm×n называется матрица Cm×n = [C ij]
+C ij = aij + bij , i = 1…m , j = 1…n
+
+Am×n =
+a11
+a12
+a1n
+…
+a21
+a22
+a2n
+…
+…
+…
+…
+…
+am1
+am2
+amn
+…
+a11
+a12
+a1n
+…
+a21
+a22
+a2n
+…
+…
+…
+…
+…
+am1
+am2
+amn
+…
+b11
+b12
+b1n
+…
+b21
+b22
+b2n
+…
+…
+…
+…
+…
+bm1
+bm2
+bmn
+…
+b11
+b12
+b1n
+…
+b21
+b22
+b2n
+…
+…
+…
+…
+…
+bm1
+bm2
+bmn
+…
+Bm×n =</text>
+		</slide>
+		<slide index="2" title="Тогда:" titleNormalized="тогда:" src="slide3.swf" size="51162" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Тогда:
+C m×n =
+a11
+a12
+a1n
+…
+a21
+a22
+a2n
+…
+…
+…
+…
+…
+am1
+am2
+amn
+…
++
+b11
+b12
+b1n
+…
+b21
+b22
+b2n
+…
+…
+…
+…
+…
+bm1
+bm2
+bmn
+…
+=
+a11
+a12
+a1n
+…
+a21
+a22
+a2n
+…
+…
+…
+…
+…
+am1
+am2
+amn
+…
+b11
+b12
+b1n
+…
+b21
+b22
+b2n
+…
+…
+…
+…
+…
+bm1
+bm2
+bmn
+…
++
+…
+…
+…
++
++
++
++
++
+…
+…
+…
+…
++
++
++
+Жми меня</text>
+		</slide>
+		<slide index="3" title="" titleNormalized="" src="slide4.swf" size="84645" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Пример 1
+A = 
+-1
+3
+2
+1
+0
+4
+B = 
+2
+1
+1
+-1
+0
+0
+C
+-1
+3
+2
+1
+0
+4
+-1
+3
+2
+1
+0
++
+2
+1
+1
+-1
+0
+0
+1
+-1
+0
+=
++
++
++
++
++
++
+-1
+3
+2
+1
+0
+4
+2
+1
+1
+-1
+0
+0
+=
+A+ B
+=
+=
+1
+4
+3
+0
+0
+4
+Пример 2
+A = 
+1
+2
+4
+3
+1
+4
+3
+-2
+5
+-1
+0
+-2
+0
+0
+-3
+0
+0
+0
+B = 
+C
+=
+A+ B
+=
+1
+2
+4
+3
+1
+4
+3
+-2
+5
++
+-1
+0
+-2
+0
+0
+-3
+0
+0
+0
+=
+1
+2
+4
+3
+1
+4
+3
+-2
+5
+-1
+0
+-2
+0
+0
+-3
+0
+0
+0
++
++
++
++
++
++
++
++
++
+=
+0
+2
+2
+3
+2
+4
+3
+-2
+5</text>
+		</slide>
+		<slide index="4" title="Свойства сложения матриц" titleNormalized="свойства сложения матриц" src="slide5.swf" size="17005" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Свойства сложения матриц
+A + B = B + A (коммутативность сложения)
+( A + B ) + C = A + ( B + C ) (ассоциативность сложения)
+Существует нулевая матрица 0m×n :
+A + 0 = 0 + A = A , для любой матрицы Am×n , где n,m∈N
+Равные матрицы
+Def: Две матрицы называются равными, если они имеют один и тот же 	размер, а соответствующие элементы – совпадают, т.е: 
+ Am×n = Bm×n   i,j: aij = bij</text>
+		</slide>
+		<slide index="5" title="Раздел 2: Умножение матриц на число" titleNormalized="раздел 2: умножение матриц на число" src="slide6.swf" size="4904" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Раздел 2: Умножение матриц на число
+Произведением матрицы Am×n = [aij] на число  ℝ (или числа  ℝ на матрицу Am×n = [aij] ) называется матрица Bm×n = [bij] ;
+bij =  * aij , i = 1 … m , j = 1 … n
+
+Am×n =
+a11
+a1n
+…
+…
+…
+…
+am1
+amn
+…
+…
+…
+…
+Bm×n =
+*A
+=
+A*
+=
+* a11
+* a1n
+…
+…
+…
+…
+* am1
+* amn
+…
+…
+=
+b11
+b1n
+…
+…
+…
+…
+bm1
+bmn
+…</text>
+		</slide>
+		<slide index="6" title="" titleNormalized="" src="slide7.swf" size="22135" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Пример
+Am×n =
+1
+2
+-3
+3
+7
+0
+ = -2
+B =
+-2*A
+=
+-2*1
+-2*2
+-2*(-3)
+-2*3
+-2*7
+-2*0
+=
+-2
+-4
+6
+-6
+-14
+0
+При  = -1 получим матрицу (-1)*A = - A, которую будем называть матрицей, противоположной матрице A. 
+</text>
+		</slide>
+		<slide index="7" title="Свойства умножения матриц на число" titleNormalized="свойства умножения матриц на число" src="slide8.swf" size="3187" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Свойства умножения матриц на число
+1*A = A * 1 = A
+ * (  * A ) = (  *  ) * A (ассоциативность относительно умножения чисел)
+ * (  + A ) =  * A +  *  (дистрибутивность умножения на число относительно сложения матриц)
+(  +  )* A =  * A +  * A (дистрибутивность умножения на матрицу относительно сложения чисел)
+Тогда можем определить разность матриц:
+A – B:	A – B = A + (- B)</text>
+		</slide>
+		<slide index="8" title="Раздел 3: Умножение матриц" titleNormalized="раздел 3: умножение матриц" src="slide9.swf" size="3458" advanceOnTime="0" framesCount="52" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000"/>
+				<step start="1" end="51" playTime="0.9990000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Раздел 3: Умножение матриц
+Произведение матрицы A на матрицу B возможно только в том случае, если A и B – матрицы согласованные, т.е. количество столбцов матрицы A равно количеству строк матрицы 
+A * B 
+=
+A
+m
+×
+n
+*
+B
+m
+×
+n</text>
+		</slide>
+		<slide index="9" title="" titleNormalized="" src="slide10.swf" size="45170" advanceOnTime="0" framesCount="3156" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000"/>
+				<step start="1" end="51" playTime="0.9990000"/>
+				<step start="52" end="102" playTime="1.0000000"/>
+				<step start="103" end="153" playTime="1.0000000"/>
+				<step start="154" end="204" playTime="1.0000000"/>
+				<step start="205" end="3155" playTime="59.0000000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Произведением матрицы Am×n = [aij] на матрицу Bn×k = [bij] называется матрица Cm*k = [cij] такая, что:
+Cij= 𝑠=1 𝑛 𝑎 𝑖𝑠 ∗𝑏 𝑠𝑗 
+Чтобы получить элемент cij нужно почленно умножить элементы i–й строки матрицы A на соответствующие элементы j–го столбца матрицы B и сложить эти произведения :
+, т.е :
+A2×3 =
+a11
+a13
+a12
+a21
+a23
+a22
+B3×2 =
+b11
+b12
+b21
+b22
+b31
+b32
+C2×2 =
+A2×3 *
+B3×2 
+=
+a11
+a13
+a12
+a21
+a23
+a22
+b11
+b12
+b21
+b22
+b31
+b32
+*
++
+*
++
+*
+,
+*
+b11
++
+*
+b21
++
+*
+b31
+,
+a11
+*
++
+a12
+*
++
+a13
+*
+a21
+*
+b12
++
+a22
+*
+b22
++
+a23
+*
+b32
+=
+C11
+C21
+C12
+C22</text>
+		</slide>
+		<slide index="10" title="" titleNormalized="" src="slide11.swf" size="26700" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Пример 1
+A2×2 =
+1
+2
+-3
+4
+B2×3 =
+-1
+3
+0
+1
+-9
+2
+C2×3 =
+A2×2 *
+B2×3 
+=
+1*(-1)+2*1
+-3*(-1)+4*1
+,
+,
+1*0+2*2
+-3*0+4*2
+,
+,
+1*3+2*(-9)
+-3*3+4*(-9)
+=
+=
+1
+-15
+4
+7
+-45
+8</text>
+		</slide>
+		<slide index="11" title="" titleNormalized="" src="slide12.swf" size="47996" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Пример 2
+A2×3 =
+1
+0
+-2
+3
+5
+-1
+B3×2 =
+1
+7
+3
+4
+-1
+0
+C2×2 =
+A2×3 *
+B3×2 
+=
+1
+0
+-2
+3
+5
+-1
+1
+7
+3
+4
+-1
+0
+*
++
+*
++
+*
+,
+*
+1
++
+*
+3
++
+*
+-1
+,
+1
+*
++
+-2
+*
++
+0
+*
+3
+*
+7
++
+-1
+*
+4
++
+5
+*
+0
+=
+-5
+-5
+-1
+17</text>
+		</slide>
+		<slide index="12" title="" titleNormalized="" src="slide13.swf" size="40260" advanceOnTime="0" framesCount="2503" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000"/>
+				<step start="1" end="2401" playTime="47.9990000"/>
+				<step start="2402" end="2502" playTime="2.0000000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Пример 3
+A2×3 =
+1
+0
+-2
+3
+5
+-1
+B3×2 =
+1
+7
+3
+4
+0
+C3×3 =
+B3×2 *
+A2×3 
+=
+0
+-2
+3
+5
+-1
+1
+7
+3
+4
+-1
+0
+-1
+1
+*
++
+*
+;
+1
+*
+1
++
+7
+*
+;
+*
+1
++
+7
+*
+*
+1
++
+*
+3
+;
+3*-2+ 4*-1
+;
+3*0+ 4*5
+-1*1+0*3
+;
+-1*-2+ 0 *-1
+;
+-1*0+0*5
+=
+22
+-9
+15
+-1
+2
+-10
+35
+0
+20
+Очевидно и важно , что A * B  B * A</text>
+		</slide>
+		<slide index="13" title="" titleNormalized="" src="slide14.swf" size="41707" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Пример 4
+A =
+1
+1
+1
+1
+B =
+1
+-1
+-1
+1
+A*B
+ =
+1
+1
+1
+1
+*
+1
+-1
+-1
+1
+ =
+1
+1
+1
+1
+1
+-1
+-1
+1
+ *
+ +
+ *
+;
+ *
+1
+ +
+ *
+-1
+;
+1
+ *
+ +
+1
+ *
+1
+ *
+-1
+ +
+1
+ *
+1
+ =
+0
+0
+0
+0
+ =
+0
+Произведение двух ненулевых матриц может быть нулевым.</text>
+		</slide>
+		<slide index="14" title="Свойства операции умножения матриц" titleNormalized="свойства операции умножения матриц" src="slide15.swf" size="8719" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Свойства операции умножения матриц
+A * E = E * A = A , для любой матрицы A
+A * 0 = 0 * A = 0 , для любой матрицы A
+A * B  B * A ( в общем случае умножение матриц некоммутативно) 
+( A * B ) * C = A * ( B * C)
+ * ( A * B ) = (  * A ) * B = A * (  * B )
+( A + B ) * C = A * C + B * C (дистрибутивность умножения справа относительно сложения матриц)
+C * ( A + B) = C * A + C * B (дистрибутивность умножения слева относительно сложения матриц)
+
+*
+Если определены оба произведения A * B и B * A и выполнено равенство A*B = B*A, то матрицы A и B называют коммутативными или перестановочными. Такие матрицы всегда квадратные и одного порядка.</text>
+		</slide>
+		<slide index="15" title="§3. Транспонирование матриц. Блочные матрицы" titleNormalized="§3. транспонирование матриц. блочные матрицы" src="slide16.swf" size="3203" advanceOnTime="0" framesCount="27" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000"/>
+				<step start="1" end="26" playTime="0.4990000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>§3. Транспонирование матриц. Блочные матрицы
+Транспонирование – это важная операция которая совершается над матрицами в различных прикладных задача. Поэтому мы расскажем об этой операции отдельно.
+
+Def: Для матрицы Am×n = [aij] её транспонированной матрицей 	называют матрицу AT = ATn×m = [Cij] : Cij = aij , i=1…m, j = 1…n
+
+При транспонировании матрицы её строки становятся столбцами новой матрицы с сохранением их порядка. Аналогично столбцы исходной матрицы превращаются в строки транспонированной. Поэтому операцию транспонирования логично рассматривать как преобразование симметрии матрицы относительно ее главной диагонали.</text>
+		</slide>
+		<slide index="16" title="В общем виде, операция транспонирования выглядит так:" titleNormalized="в общем виде, операция транспонирования выглядит так:" src="slide17.swf" size="20099" advanceOnTime="0" framesCount="602" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000"/>
+				<step start="1" end="601" playTime="11.9990000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>В общем виде, операция транспонирования выглядит так:
+A =
+a11
+a12
+a1n
+…
+a21
+a22
+a2n
+…
+…
+…
+…
+…
+am1
+am2
+amn
+…
+a11
+a12
+a1n
+…
+a21
+a22
+a2n
+…
+…
+…
+…
+…
+am1
+am2
+amn
+…
+AT =
+T</text>
+		</slide>
+		<slide index="17" title="" titleNormalized="" src="slide18.swf" size="44316" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Пример 1
+2
+-1
+3
+0
+1
+-4
+T
+=
+2
+-1
+3
+0
+1
+-4
+Пример 2
+a1
+a2
+an
+…
+T
+=
+Пример 3
+a1
+a2
+an
+…
+a11
+a21
+…
+am1
+a11
+a21
+…
+am1
+=
+T</text>
+		</slide>
+		<slide index="18" title="Свойства транспонирования матриц:" titleNormalized="свойства транспонирования матриц:" src="slide19.swf" size="1875" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Свойства транспонирования матриц:
+(AT)T = A
+(A + B)T = AT + BT
+(*A)T = *AT ,  ℝ 
+Операция транспонирования позволяет ввести новые виды матриц.</text>
+		</slide>
+		<slide index="19" title="Симметрическая матрица" titleNormalized="симметрическая матрица" src="slide20.swf" size="30769" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Симметрическая матрица
+Def: Симметрическая матрица – это квадратная матрица A : AT = A. 	Элементы симметрической матрицы расположенные на местах, 	симметричных относительно диагонали, равны между собой. 
+Пример 1
+A =
+1
+2
+2
+3
+- Симметрическая матрица, т.к.
+AT =
+1
+2
+2
+3
+T
+=
+1
+2
+2
+3
+Пример 2
+A =
+3
+1
+-2
+-2
+-4
+0
+1
+2
+4
+- Симметрическая матрица, т.к.
+AT =
+3
+1
+-2
+-2
+-4
+0
+1
+2
+4
+3
+1
+-2
+-2
+-4
+0
+1
+2
+4
+T
+=</text>
+		</slide>
+		<slide index="20" title="" titleNormalized="" src="slide21.swf" size="9492" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Кососимметрическая матрица
+Def: Кососимметрическая матрица – это квадратная матрица, 	элементы которой расположенные на местах, симметричных 	относительно главной диагонали, отмечаются знаком, а 	диагональные – равны нулю. 
+Пример 1
+A =
+0
+2
+-2
+0
+Пример 2
+A =
+0
+2
+-4
+0
+-1
+0
+4
+1
+-2</text>
+		</slide>
+		<slide index="21" title="" titleNormalized="" src="slide22.swf" size="34415" advanceOnTime="0" framesCount="1062" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000"/>
+				<step start="1" end="1061" playTime="21.1990000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Теперь перейдем к введению определения блочных матриц. Рассмотрим некоторую матрицу A раздели ее на части вертикальными прямыми и горизонтальными линиями.
+A =
+a21
+a41
+a11
+a31
+a51
+a22
+a42
+a12
+a32
+a52
+a23
+a43
+a13	
+a33
+a53
+a24
+a44
+a14
+a34
+a54
+a25
+a45
+a15
+a35
+a55
+a21
+a41
+a11
+a31
+a51
+a22
+a42
+a12
+a32
+a52
+a23
+a43
+a13	
+a33
+a53
+a24
+a44
+a14
+a34
+a54
+a25
+a45
+a15
+a35
+a55
+A =</text>
+		</slide>
+		<slide index="22" title="" titleNormalized="" src="slide23.swf" size="17334" advanceOnTime="0" framesCount="402" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000"/>
+				<step start="1" end="401" playTime="7.9990000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Тогда получаем прямоугольные ячейки которые сами по себе также являются матрицами. Эти ячейки называют блоками матриц. Таким образом, сама матрица A может рассматриваться как таблица, элементами которой являются более мелкие матрицы:
+M : A = [ M ]
+При таком построении матрица A состоит из блоков , поэтому её называют блочной. Например как показано выше, матрица:
+A = [ M ]
+
+ =
+M 11
+M12
+M21
+M22
+ , где
+M 11
+ =
+a21
+a11
+a31
+a22
+a12
+a32
+a23
+a13	
+a33
+M 12
+ =
+a24
+a14
+a34
+a25
+a15
+a35
+M 21
+ =
+a41
+a51
+a42
+a52
+a43
+a53
+M 22
+ =
+a44
+a54
+a45
+a55</text>
+		</slide>
+		<slide index="23" title="" titleNormalized="" src="slide24.swf" size="2937" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Вообще, для составления блочной матрицы из серии матриц M необходимо, чтобы подмножества матриц из серии с одинаковым значением индекса  имели одинаковое количество строк, а подмножества матриц с одинаковым значением индекса  имели одинаковое количество столбцов.
+
+Эти подмножества образуют соответственно «блочные» строки и «блочные» столбцы. Операции над блочными матрицами совершаются по тем же правилам , что и над обычными матрицами, но с оговоркой относительно размера блочных матриц.
+
+Представление исходной матрицы в блочном виде удобно, если изначально её размер достаточно велик, при этом необходимо сложить или умножить её с матрицей аналогичного размера и при этом их согласованные разбиения на блоки содержат нулевые, единичные, диагональные или треугольные матрицы.</text>
+		</slide>
+		<slide index="24" title="" titleNormalized="" src="slide25.swf" size="46503" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>При транспонировании блочной матрицы транспонированию подлежат и её элементы.
+Пример 1
+Рассмотрим представленную выше блочную матрицу 
+A 
+ =
+M 11
+M12
+M21
+M22
+M 11
+M12
+M21
+M22
+T
+ =
+M 11
+M12
+M21
+M22
+T
+T
+T
+T
+ или в общем виде:
+a21
+a41
+a11
+a31
+a51
+a22
+a42
+a12
+a32
+a52
+a23
+a43
+a13	
+a33
+a53
+a24
+a44
+a14
+a34
+a54
+a25
+a45
+a15
+a35
+a55
+T
+ =
+a21
+a41
+a11
+a31
+a51
+a22
+a42
+a12
+a32
+a52
+a23
+a43
+a13	
+a33
+a53
+a24
+a44
+a14
+a34
+a54
+a25
+a45
+a15
+a35
+a55
+a14
+a11
+a13
+a11
+a22
+a24
+a21
+a23
+a25
+a32
+a34
+a31	
+a33
+a35
+a42
+a44
+a41
+a43
+a45
+a52
+a54
+a51
+a53
+a55
+a12</text>
+		</slide>
+		<slide index="25" title="Пример 2" titleNormalized="пример 2" src="slide26.swf" size="73381" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>Транспонируем блочную матрицу A
+Пример 2 
+a21
+a41
+a11
+a31
+a22
+a42
+a12
+a32
+a23
+a43
+a13	
+a33
+a24
+a44
+a14
+a34
+a25
+a45
+a15
+a35
+T
+ =
+A 11
+A12
+A21
+A22
+T
+ =
+A 11
+A12
+A21
+A22
+T
+T
+T
+T
+ =
+ =
+a12
+a14
+a11
+a13
+a15
+a22
+a24
+a21
+a23
+a25
+a32
+a34
+a31	
+a33
+a35
+a42
+a44
+a41
+a43
+a45</text>
+		</slide>
+		<slide index="26" title="§3. Элементарные преобразования матриц" titleNormalized="§3. элементарные преобразования матриц" src="slide27.swf" size="24871" advanceOnTime="0" framesCount="1" hasEmbeddedFlashClip="0" hidden="0" level="0" advanceOnClick="1" thumbnailAssetId="">
+			<sounds/>
+			<videos/>
+			<transitionEffect name="" duration="0.0000000" soundId="" looped="0"/>
+			<soundCommands/>
+			<videoCommands/>
+			<animationSteps>
+				<step start="0" end="0" playTime="0.0010000" pauseTime="0.0000000"/>
+			</animationSteps>
+			<notes/>
+			<notesNormalized/>
+			<notesHtml/>
+			<text>§3. Элементарные преобразования матриц
+Матрицы , полученные одна из другой с помощью элементарных преобразований будем называть эквивалентными м обозначать A~B
+К элементарным преобразования матриц относятся:
+1) Умножение некоторой строки (столбца) матрицы на число  ℝ, 0.
+1
+a11
+a1n
+…
+…
+…
+…
+am1
+amn
+…
+…
+~
+*a11
+*a1n
+…
+…
+…
+…
+am1
+amn
+…
+…
+2
+a11
+a1n
+…
+…
+…
+…
+am1
+amn
+…
+…
+~
+*a11
+a1n
+…
+…
+…
+…
+*am1
+amn
+…
+…</text>
+		</slide>
+	</slides>
+</presentation>
