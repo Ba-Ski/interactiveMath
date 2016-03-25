@@ -120,7 +120,7 @@
     top: -115px;
     width: 396px;
     height: 360px;
-   
+    z-index: -1;
 }
 #blank{
     position: absolute;
@@ -148,4 +148,7 @@
 #mine li{
     margin: 20px 0;
 }
-
+#math_block{
+    opacity: 0;
+    position: relative;
+}

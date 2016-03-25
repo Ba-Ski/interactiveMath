@@ -8,7 +8,6 @@ body{
     /*font-family: "Helvetica Neue",Helvetica,sans-serif,Arial;*/
 
 }
-
 #header{
     text-decoration: underline;
     text-align: center;
@@ -26,7 +25,7 @@ body{
     margin-left: 10px;
 }
 .theoryWO{
-     padding: 6px 40px 6px 40px;
+    padding: 6px 40px 6px 40px;
     padding-left: 15px;
     margin:0.83em 0px;
     margin-left: 10px;

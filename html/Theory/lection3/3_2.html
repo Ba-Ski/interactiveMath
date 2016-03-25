@@ -4,22 +4,51 @@
 	<title>Test</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../../../css/style.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="../../../css/3_2.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="../../../css/style.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="../../../css/3_2.css" media="screen"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="../../../js/3_2.js"></script>
 	<script type="text/javascript" src="../../../js/common.js"></script>
 	<script type="text/javascript" src="../../../lib/lazy-line-painter-master/jquery.lazylinepainter-1.7.0.js"></script>
 	<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+		MathJax.Hub.Config({
+		extensions: ["tex2jax.js"],
+		jax: ["input/TeX", "output/SVG"],
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+			displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+			processEscapes: true
+		},
+		SVG: {
+		  scale: 110
+		},
+		TeX: { equationNumbers: { autoNumber: "all" } }
+		 });
+    </script>
+	<script type="text/javascript" async
+			src="https://cdn.mathjax.org/mathjax/latest/MathJax.js">
 	</script>
-	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 
-	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>3.2</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="../../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 
 <body>
-
+<nav>
+	<div class="light-blue nav-wrapper breadcrumbs-padding">
+		<div class="col s12">
+			<a href="../../../index.html" class="breadcrumb">Курс</a>
+			<a href="../theory.html" class="breadcrumb">Теория</a>
+			<a href="#!" class="breadcrumb"> 3.2.2</a>
+		</div>
+	</div>
+</nav>
 	<!--            <div id="mainPart">-->
 	<div id="content">
 		<h2 id="header">Векторная алгебра</h2>
@@ -42,7 +71,7 @@
 			\end{pmatrix}
 			\) Выберем в ней произвольные 2 строки и 2 столбца, например 2-я и 3-я строка и 3-й и 4-й столбец:
 			</p>
-			<div style="position: relative"><div id="btn1" class="btn" ></div></div>
+			<div id="btn1" style="position: relative" class=" left btn-floating waves-effect waves-purple light-blue"><i class="material-icons">play_arrow</i></div>
 			<div class="matrixContainer mc">
 				<div id="fillArea" class="anm"></div>
 				<div id="bigArea" class="anm"></div>
@@ -81,7 +110,7 @@
 					Очевидно, что дополнительным к минору \(M'\) будет минор \(M\).
 				</p>
 				<h4 class="example">Пример</h4>
-				<div style="position: relative"><div id="btn2" class="btn" ></div></div>
+				<div id="btn2" style="position: relative" class=" left btn-floating waves-effect waves-purple light-blue"><i class="material-icons">play_arrow</i></div></div>
 				<div class="matrixContainer mc">
 					<div id="minor2draw" class="anmMinor2"></div>
 					<div id="additionalMinor" class="anmMinor2"></div>
@@ -98,4 +127,5 @@
 				\)	
 				</div>
 	</div>
+	<script src="../../../js/materialize.js"></script>
 </body>
