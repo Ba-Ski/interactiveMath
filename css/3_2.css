@@ -4,6 +4,7 @@
     left: 3px;
     width: 270px;
     height:120px;
+    z-index: -1;
 }
 #arrowDown{
 	position: absolute;
@@ -30,7 +31,7 @@
 .anmMinor2{
 	position: absolute;
     top: -20px;
-    left: -30px;
-    width: 310px;
-    height:186px;
+    left: -20px;
+    width: 360px;
+    height:230px;
 }
