@@ -1,5 +1,6 @@
 html{
-    min-height:100%; /*/make sure it is at least as tall as the viewport*/ 
+    min-height:100%; /*/make sure it is at least as tall as the viewport*/
+    height:100%;
     position:relative
 }
 
@@ -195,6 +196,9 @@ body{
     background-color: #81d4fa;
     display: none;
     padding: 50px;
+}
+.fullHeight{
+    height: 100%;
 }
 /*.container{
     height: 100%;

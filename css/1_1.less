@@ -1,0 +1,43 @@
+.circle (@radius; @color) {
+  width: @radius * 2;
+  height: @radius * 2;
+  background: @color;
+  border: 5px solid saturate(@color, 20%);
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.oval (@width; @height; @a; @b; @color){
+  width: @width;
+  height: @height;
+  background: @color;
+  border: 5px solid saturate(@color, 20%);
+  -moz-border-radius: @a / @b;
+  -webkit-border-radius: @a / @b;
+  border-radius: @a / @b;
+}
+.nums{
+  position: relative;
+  width: 200px;
+  div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+  }
+}
+#Nnums{
+  .circle(20px; blue);
+}
+#Znums{
+  .circle(40px; violet);
+}
+#Qnums{
+  .oval(100px; 50px; 75px; 30px; orange);
+}
+#Rnums{
+  .oval(120px; 70px; 100px; 60px; beige);
+}
+#Cnums{
+  .circle(140px; green);
+}
